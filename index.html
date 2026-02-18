@@ -49,25 +49,23 @@
 
         <section class="text-center">
             <div class="inline-block px-4 py-1 border border-slate-800 rounded-full text-slate-500 text-[10px] font-mono mb-6 uppercase tracking-widest">ID: 23FE10CSE00680</div>
-            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">Feature-Optimized and Explainable Energy Consumption Prediction for Smart Homes</span></h1>
-            <p class="text-slate-400 max-w-2xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">
-                "A lightweight machine learning model using minimal indoor environmental features combined with external weather parameters can accurately predict next-day household energy consumption while remaining computationally efficient and interpretable for real-world smart home deployment."
-            </p>
+            <h1 class="text-6xl md:text-7xl font-extrabold mb-8 uppercase leading-tight"><span class="gradient-text uppercase">Feature-Optimized and Explainable Energy Consumption Prediction</span></h1>
+            <p class="text-slate-400 max-w-2xl mx-auto italic text-lg leading-relaxed border-l-2 border-blue-500/30 pl-6 text-left">"A feature-optimized and interpretable machine learning model using minimal environmental and temporal parameters can accurately predict short-term energy consumption across general residential and commercial buildings while maintaining computational efficiency."</p>
         </section>
 
         <section id="problem" class="grid md:grid-cols-2 gap-12 items-stretch">
             <div class="glass p-10 rounded-[2.5rem] flex flex-col justify-center border-l-4 border-blue-600">
                 <h2 class="text-3xl font-extrabold mb-6">Problem Statement</h2>
-                <p class="text-slate-400 leading-relaxed text-justify">Residential energy consumption is increasing rapidly due to the growing use of smart appliances and climate control systems. Most existing prediction systems rely on complex deep learning models or extensive IoT sensor data, making them unsuitable for low-resource or small-scale smart homes. There is a need for a computationally efficient, interpretable, and accurate energy consumption prediction model that can function using limited indoor and weather-related features.</p>
+                <p class="text-slate-400 leading-relaxed text-justify">Energy consumption forecasting plays a crucial role in energy management, cost optimization, and sustainability planning. Existing prediction systems often rely on high-dimensional IoT sensor networks or computationally intensive deep learning models, limiting their deployment in small-scale or resource-constrained environments. There is a need for a lightweight, interpretable, and accurate energy consumption prediction framework that can operate effectively using a reduced set of environmental and temporal features.</p>
             </div>
             <div class="space-y-6">
                 <div class="glass p-7 rounded-3xl border-r-4 border-blue-500/50">
                     <h3 class="text-blue-400 font-bold text-xs uppercase tracking-widest mb-2">Literature Review / Market Research</h3>
-                    <p class="text-sm text-slate-500 italic">Studies using Random Forest, SVR, LSTM, and GRU on UCI/Kaggle energy datasets show strong forecasting performance, with ensemble methods often achieving competitive accuracy at lower computational cost. Most approaches prioritize predictive performance over feature minimization and model interpretability, while commercial systems depend on cloud-based black-box engines.</p>
+                    <p class="text-sm text-slate-500 italic">Research in energy forecasting commonly uses Linear Regression, Random Forest, Gradient Boosting, and LSTM networks. Datasets such as the Appliances Energy Prediction dataset from the UCI Machine Learning Repository are widely used for benchmarking. Literature shows deep learning models perform well for long-term forecasting but require higher computational resources, while ensemble methods provide strong performance with lower complexity. Limited focus exists on feature optimization and interpretability in energy prediction systems, and commercial energy management systems often prioritize accuracy without emphasizing decision transparency.</p>
                 </div>
                 <div class="glass p-7 rounded-3xl border-r-4 border-purple-500/50">
                     <h3 class="text-purple-400 font-bold text-xs uppercase tracking-widest mb-2">Research Gap / Innovation</h3>
-                    <p class="text-sm text-slate-500 italic">This project targets lightweight and explainable prediction for resource-constrained smart homes by optimizing minimal indoor features, integrating external weather variables, and comparing traditional ML models with time-series methods while preserving low compute requirements.</p>
+                    <p class="text-sm text-slate-500 italic">Most existing energy consumption prediction models prioritize accuracy using complex architectures and large feature sets. However, limited research has explored feature reduction strategies for cost-efficient implementation, comparison between lightweight ML models and deep learning models under reduced feature conditions, explainable AI techniques for interpreting prediction outputs, and integration of environmental and temporal features in a simplified yet effective framework. This project proposes a feature-optimized, explainable, and computationally efficient energy prediction model suitable for broader residential and commercial applications.</p>
                 </div>
             </div>
         </section>
@@ -78,7 +76,7 @@
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-database text-blue-500 text-3xl mb-4"></i>
                     <h3 class="font-bold mb-2 uppercase text-xs tracking-widest">Dataset / Input</h3>
-                    <p class="text-sm text-slate-500">UCI Appliances Energy Prediction dataset; features: indoor temperature/humidity, outdoor temperature, wind speed, hour/day, previous usage. Preprocessing: missing-value handling, scaling, datetime extraction, 80:20 split.</p>
+                    <p class="text-sm text-slate-500">Dataset source: Energy Consumption Prediction Dataset from Kaggle (https://www.kaggle.com/datasets/mrsimple07/energy-consumption-prediction). Description: time-based energy usage records with environmental and operational context for demand modeling. Input features include temperature, humidity, occupancy, HVAC usage, lighting usage, renewable energy contribution, and timestamp/datetime-derived fields (hour, day, weekday). Target variable: Energy Consumption (continuous numeric value representing energy used).</p>
                 </div>
                 <div class="glass p-8 rounded-3xl text-center">
                     <i class="fas fa-microchip text-purple-500 text-3xl mb-4"></i>
@@ -174,5 +172,9 @@
     </script>
 </body>
 </html>
+
+
+
+
 
 
